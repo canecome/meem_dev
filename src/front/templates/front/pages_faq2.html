@@ -1,10 +1,23 @@
-{% extends 'front/_base.html' %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <title>利用方法について | meem</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico"/>
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/plugins.css" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
 
-{% block content %}
-<body class="alt-menu sidebar-noneoverflow">
-    <!-- BEGIN LOADER -->
-    <div id="load_screen"> <div class="loader"> <div class="loader-content"> <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 792 723" style="enable-background:new 0 0 792 723;" xml:space="preserve"> <g> <g> <path class="st0" d="M213.9,584.4c-47.4-25.5-84.7-60.8-111.8-106.1C75,433.1,61.4,382,61.4,324.9c0-57,13.6-108.1,40.7-153.3 S166.5,91,213.9,65.5s100.7-38.2,159.9-38.2c49.9,0,95,8.8,135.3,26.3s74.1,42.8,101.5,75.7l-85.5,78.9 c-38.9-44.9-87.2-67.4-144.7-67.4c-35.6,0-67.4,7.8-95.4,23.4s-49.7,37.4-65.4,65.4c-15.6,28-23.4,59.8-23.4,95.4 s7.8,67.4,23.4,95.4s37.4,49.7,65.4,65.4c28,15.6,59.7,23.4,95.4,23.4c57.6,0,105.8-22.7,144.7-68.2l85.5,78.9 c-27.4,33.4-61.4,58.9-102,76.5c-40.6,17.5-85.8,26.3-135.7,26.3C314.3,622.7,261.3,809.9,213.9,584.4z"/> </g> <circle class="st1" cx="375.4" cy="322.9" r="100"/> </g> <g> <circle class="st2" cx="275.4" cy="910" r="65"></circle> <circle class="st4" cx="475.4" cy="910" r="65"></circle> </g> </svg> </div></div></div>
-    <!--  END LOADER -->
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+    <link href="assets/css/pages/faq/faq2.css" rel="stylesheet" type="text/css" /> 
+    <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->     
+</head>
+<body class="sidebar-noneoverflow">
 
     <!--  BEGIN NAVBAR  -->
     <div class="header-container">
@@ -374,441 +387,215 @@
         </div>
         <!--  END TOPBAR  -->
         
-        <!--  BEGIN CONTENT PART  -->
+        <!--  BEGIN CONTENT AREA  -->
         <div id="content" class="main-content">
             <div class="layout-px-spacing">
 
-                <div class="page-header">
-                    <div class="page-title">
-                        <h3>GoogleAnalyticsデータポータル</h3>
-                    </div>
-                    <div class="dropdown filter custom-dropdown-icon">
-                        <a class="dropdown-toggle btn" href="#" role="button" id="filterDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="text"><span>表示</span> : 日別集計</span> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+                <div class="faq">
 
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="filterDropdown">
-                            <a class="dropdown-item" data-value="<span>Show</span> : Daily Analytics" href="javascript:void(0);">日別集計</a>
-                            <a class="dropdown-item" data-value="<span>Show</span> : Weekly Analytics" href="javascript:void(0);">週別集計</a>
-                            <a class="dropdown-item" data-value="<span>Show</span> : Monthly Analytics" href="javascript:void(0);">月別集計</a>
-                            <a class="dropdown-item" data-value="Download All" href="javascript:void(0);">エクスポート</a>
-                            <a class="dropdown-item" data-value="Share Statistics" href="javascript:void(0);">シェア</a>
-                        </div>
-                    </div>
-                </div>
+                    <div class="faq-layouting layout-spacing">
 
-                <div class="row layout-top-spacing">
+                        <div class="fq-tab-section layout-top-spacing">
+                            <div class="row">
+                                <div class="col-md-12">
 
+                                    <h2><span>利用方法 </span>について</h2>
 
-
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
-                        <div class="widget-four">
-                            <div class="widget-heading">
-                                <h5 class="">新規ユーザー（ブラウザ カテゴリ別）</h5>
-                            </div>
-                            <div class="widget-content">
-                                <div class="vistorsBrowser">
-                                    <div class="browser-list">
-                                        <div class="w-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chrome"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="21.17" y1="8" x2="12" y2="8"></line><line x1="3.95" y1="6.06" x2="8.54" y2="14"></line><line x1="10.88" y1="21.94" x2="15.46" y2="14"></line></svg>
-                                        </div>
-                                        <div class="w-browser-details">
-                                            <div class="w-browser-info">
-                                                <h6>Chrome</h6>
-                                                <p class="browser-count">65%</p>
-                                            </div>
-                                            <div class="w-browser-stats">
-                                                <div class="progress">
-                                                    <div class="progress-bar bg-gradient-primary" role="progressbar" style="width: 65%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="browser-list">
-                                        <div class="w-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-compass"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
-                                        </div>
-                                        <div class="w-browser-details">
-                                            
-                                            <div class="w-browser-info">
-                                                <h6>Safari</h6>
-                                                <p class="browser-count">25%</p>
-                                            </div>
-
-                                            <div class="w-browser-stats">
-                                                <div class="progress">
-                                                    <div class="progress-bar bg-gradient-danger" role="progressbar" style="width: 35%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
-                                    <div class="browser-list">
-                                        <div class="w-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-                                        </div>
-                                        <div class="w-browser-details">
-                                            
-                                            <div class="w-browser-info">
-                                                <h6>Others</h6>
-                                                <p class="browser-count">15%</p>
-                                            </div>
-
-                                            <div class="w-browser-stats">
-                                                <div class="progress">
-                                                    <div class="progress-bar bg-gradient-warning" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                    
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12 layout-spacing">
-                        <div class="row widget-statistic">
-                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-                                <div class="widget widget-one_hybrid widget-followers">
-                                    <div class="widget-heading">
-                                        <div class="w-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                                        </div>
-                                        <p class="w-value">31.6K</p>
-                                        <h5 class="">セッション</h5>
-                                    </div>
-                                    <div class="widget-content">    
-                                        <div class="w-chart">
-                                            <div id="hybrid_followers"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-                                <div class="widget widget-one_hybrid widget-referral">
-                                    <div class="widget-heading">
-                                        <div class="w-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
-                                        </div>
-                                        <p class="w-value">1,900</p>
-                                        <h5 class="">リファラー</h5>
-                                    </div>
-                                    <div class="widget-content">    
-                                        <div class="w-chart">
-                                            <div id="hybrid_followers1"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-                                <div class="widget widget-one_hybrid widget-engagement">
-                                    <div class="widget-heading">
-                                        <div class="w-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
-                                        </div>
-                                        <p class="w-value">18.2%</p>
-                                        <h5 class="">エンゲージメント</h5>
-                                    </div>
-                                    <div class="widget-content">    
-                                        <div class="w-chart">
-                                            <div id="hybrid_followers3"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-9 col-lg-12 col-md-12 col-sm-12 col-12 layout-spacing">
-                        <div class="widget widget-chart-three">
-                            <div class="widget-heading">
-                                <div class="">
-                                    <h5 class="">ユーザーサマリー</h5>
-                                </div>
-
-                                <div class="dropdown  custom-dropdown">
-                                    <a class="dropdown-toggle" href="#" role="button" id="uniqueVisitors" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
-                                    </a>
-
-                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="uniqueVisitors">
-                                        <a class="dropdown-item" href="javascript:void(0);">もっと見る</a>
-                                        <a class="dropdown-item" href="javascript:void(0);">更新</a>
-                                        <a class="dropdown-item" href="javascript:void(0);">エクスポート</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="widget-content">
-                                <div id="uniqueVisits"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
-                        <div class="widget widget-activity-two">
-
-                            <div class="widget-heading">
-                                <h5 class="">通知</h5>
-                            </div>
-
-                            <div class="widget-content">
-
-                                <div class="mt-container mx-auto">
-                                    <div class="timeline-line">
+                                    <div class="row">
                                         
-                                        <div class="item-timeline timeline-new">
-                                            <div class="t-dot" data-original-title="" title="">
+                                        <div class="col-lg-6">
+
+                                            <div class="accordion" id="simple_faq">
+                                                <div class="card">
+                                                    <div class="card-header" id="fqheadingOne">
+                                                        <div class="mb-0" data-toggle="collapse" role="navigation" data-target="#fqcollapseOne" aria-expanded="false" aria-controls="fqcollapseOne">
+                                                            <span class="faq-q-title">はじめかた</span> <div class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="fqcollapseOne" class="collapse" aria-labelledby="fqheadingOne" data-parent="#simple_faq">
+                                                        <div class="card-body">
+                                                            <p>何は今もちろんある仕事人というのの時を云ったな。同時に生涯を発展家もいよいよ漠然たる経過あるだくらいを申し上げて来るですがは意見感ずるだろべきて、とてもとは取り巻かなうですまし。悪口を困りだのもいやしくも生涯がとうとうですたた。</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card">
+                                                    <div class="card-header" id="fqheadingTwo">
+                                                        <div class="mb-0" data-toggle="collapse" role="navigation" data-target="#fqcollapseTwo" aria-expanded="true" aria-controls="fqcollapseTwo">
+                                                            <span class="faq-q-title">はじめかた</span> <div class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg></div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="fqcollapseTwo" class="collapse show" aria-labelledby="fqheadingTwo" data-parent="#simple_faq">
+                                                        <div class="card-body">
+                                                            <p>何は今もちろんある仕事人というのの時を云ったな。同時に生涯を発展家もいよいよ漠然たる経過あるだくらいを申し上げて来るですがは意見感ずるだろべきて、とてもとは取り巻かなうですまし。悪口を困りだのもいやしくも生涯がとうとうですたた。</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card">
+                                                    <div class="card-header" id="fqheadingThree">
+                                                        <div class="mb-0" data-toggle="collapse" role="navigation" data-target="#fqcollapseThree" aria-expanded="false" aria-controls="fqcollapseThree">
+                                                            <span class="faq-q-title">はじめかた</span><div class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="fqcollapseThree" class="collapse" aria-labelledby="fqheadingThree" data-parent="#simple_faq">
+                                                        <div class="card-body">
+                                                            <p>何は今もちろんある仕事人というのの時を云ったな。同時に生涯を発展家もいよいよ漠然たる経過あるだくらいを申し上げて来るですがは意見感ずるだろべきて、とてもとは取り巻かなうですまし。悪口を困りだのもいやしくも生涯がとうとうですたた。</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card">
+                                                    <div class="card-header" id="fqheadingFour">
+                                                        <div class="mb-0" data-toggle="collapse" role="navigation" data-target="#fqcollapseFour" aria-expanded="false" aria-controls="fqcollapseFour">
+                                                            <span class="faq-q-title">はじめかた</span><div class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="fqcollapseFour" class="collapse" aria-labelledby="fqheadingFour" data-parent="#simple_faq">
+                                                        <div class="card-body">
+                                                            <p>何は今もちろんある仕事人というのの時を云ったな。同時に生涯を発展家もいよいよ漠然たる経過あるだくらいを申し上げて来るですがは意見感ずるだろべきて、とてもとは取り巻かなうですまし。悪口を困りだのもいやしくも生涯がとうとうですたた。</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card">
+                                                    <div class="card-header" id="fqheadingFive">
+                                                        <div class="mb-0" data-toggle="collapse" role="navigation" data-target="#fqcollapseFive" aria-expanded="false" aria-controls="fqcollapseFive">
+                                                            <span class="faq-q-title">はじめかた</span><div class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="fqcollapseFive" class="collapse" aria-labelledby="fqheadingFive" data-parent="#simple_faq">
+                                                        <div class="card-body">
+                                                            <p>何は今もちろんある仕事人というのの時を云ったな。同時に生涯を発展家もいよいよ漠然たる経過あるだくらいを申し上げて来るですがは意見感ずるだろべきて、とてもとは取り巻かなうですまし。悪口を困りだのもいやしくも生涯がとうとうですたた。</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card">
+                                                    <div class="card-header" id="fqheadingSix">
+                                                        <div class="mb-0" data-toggle="collapse" role="navigation" data-target="#fqcollapseSix" aria-expanded="false" aria-controls="fqcollapseSix">
+                                                            <span class="faq-q-title">はじめかた</span><div class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="fqcollapseSix" class="collapse" aria-labelledby="fqheadingSix" data-parent="#simple_faq">
+                                                        <div class="card-body">
+                                                            <p>何は今もちろんある仕事人というのの時を云ったな。同時に生涯を発展家もいよいよ漠然たる経過あるだくらいを申し上げて来るですがは意見感ずるだろべきて、とてもとは取り巻かなうですまし。悪口を困りだのもいやしくも生涯がとうとうですたた。</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>  
+
+                                        </div>
+                                        <div class="col-lg-6">
+                                            
+                                            <div class="accordion" id="simple_faq1">
+                                                <div class="card">
+                                                    <div class="card-header" id="fqheadingOne1">
+                                                        <div class="mb-0" data-toggle="collapse" role="navigation" data-target="#fqcollapseOne1" aria-expanded="false" aria-controls="fqcollapseOne1">
+                                                            <span class="faq-q-title">はじめかた</span> <div class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="fqcollapseOne1" class="collapse" aria-labelledby="fqheadingOne1" data-parent="#simple_faq1">
+                                                        <div class="card-body">
+                                                            <p>何は今もちろんある仕事人というのの時を云ったな。同時に生涯を発展家もいよいよ漠然たる経過あるだくらいを申し上げて来るですがは意見感ずるだろべきて、とてもとは取り巻かなうですまし。悪口を困りだのもいやしくも生涯がとうとうですたた。</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card">
+                                                    <div class="card-header" id="fqheadingTwo2">
+                                                        <div class="mb-0" data-toggle="collapse" role="navigation" data-target="#fqcollapseTwo2" aria-expanded="false" aria-controls="fqcollapseTwo2">
+                                                            <span class="faq-q-title">はじめかた</span> <div class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg></div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="fqcollapseTwo2" class="collapse" aria-labelledby="fqheadingTwo2" data-parent="#simple_faq1">
+                                                        <div class="card-body">
+                                                            <p>何は今もちろんある仕事人というのの時を云ったな。同時に生涯を発展家もいよいよ漠然たる経過あるだくらいを申し上げて来るですがは意見感ずるだろべきて、とてもとは取り巻かなうですまし。悪口を困りだのもいやしくも生涯がとうとうですたた。</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card">
+                                                    <div class="card-header" id="fqheadingThree3">
+                                                        <div class="mb-0" data-toggle="collapse" role="navigation" data-target="#fqcollapseThree3" aria-expanded="false" aria-controls="fqcollapseThree3">
+                                                            <span class="faq-q-title">はじめかた</span><div class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="fqcollapseThree3" class="collapse" aria-labelledby="fqheadingThree3" data-parent="#simple_faq1">
+                                                        <div class="card-body">
+                                                            <p>何は今もちろんある仕事人というのの時を云ったな。同時に生涯を発展家もいよいよ漠然たる経過あるだくらいを申し上げて来るですがは意見感ずるだろべきて、とてもとは取り巻かなうですまし。悪口を困りだのもいやしくも生涯がとうとうですたた。</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card">
+                                                    <div class="card-header" id="fqheadingFour4">
+                                                        <div class="mb-0" data-toggle="collapse" role="navigation" data-target="#fqcollapseFour4" aria-expanded="false" aria-controls="fqcollapseFour4">
+                                                            <span class="faq-q-title">はじめかた</span><div class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="fqcollapseFour4" class="collapse" aria-labelledby="fqheadingFour4" data-parent="#simple_faq1">
+                                                        <div class="card-body">
+                                                            <p>何は今もちろんある仕事人というのの時を云ったな。同時に生涯を発展家もいよいよ漠然たる経過あるだくらいを申し上げて来るですがは意見感ずるだろべきて、とてもとは取り巻かなうですまし。悪口を困りだのもいやしくも生涯がとうとうですたた。</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card">
+                                                    <div class="card-header" id="fqheadingFive5">
+                                                        <div class="mb-0" data-toggle="collapse" role="navigation" data-target="#fqcollapseFive5" aria-expanded="false" aria-controls="fqcollapseFive5">
+                                                            <span class="faq-q-title">はじめかた</span><div class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="fqcollapseFive5" class="collapse" aria-labelledby="fqheadingFive5" data-parent="#simple_faq1">
+                                                        <div class="card-body">
+                                                            <p>何は今もちろんある仕事人というのの時を云ったな。同時に生涯を発展家もいよいよ漠然たる経過あるだくらいを申し上げて来るですがは意見感ずるだろべきて、とてもとは取り巻かなうですまし。悪口を困りだのもいやしくも生涯がとうとうですたた。</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card">
+                                                    <div class="card-header" id="fqheadingSix6">
+                                                        <div class="mb-0" data-toggle="collapse" role="navigation" data-target="#fqcollapseSix6" aria-expanded="true" aria-controls="fqcollapseSix6">
+                                                            <span class="faq-q-title">はじめかた</span><div class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="fqcollapseSix6" class="collapse show" aria-labelledby="fqheadingSix6" data-parent="#simple_faq1">
+                                                        <div class="card-body">
+                                                            <p>何は今もちろんある仕事人というのの時を云ったな。同時に生涯を発展家もいよいよ漠然たる経過あるだくらいを申し上げて来るですがは意見感ずるだろべきて、とてもとは取り巻かなうですまし。悪口を困りだのもいやしくも生涯がとうとうですたた。</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="t-text">
-                                                <p>ウェブサイトの<span>成果（前週比）</span></p>
-                                            </div>
+
                                         </div>
 
-                                        <div class="item-timeline">
-                                            <div class="t-dot" data-original-title="" title="">
-                                            </div>
-                                            <div class="t-text">
-                                                <p><a href="javascript:void(0);">おめでとう！</a>新規ユーザー数の新記録を達成しました</p>
-                                            </div>
-                                        </div>
 
-                                        <div class="item-timeline">
-                                            <div class="t-dot" data-original-title="" title="">
-                                            </div>
-                                            <div class="t-text">
-                                                <p>ウェブサイトの<span>成果（前週比）</span></p>
-                                            </div>
-                                        </div>
+                                    </div>
 
-                                        <div class="item-timeline">
-                                            <div class="t-dot" data-original-title="" title="">
-                                            </div>
-                                            <div class="t-text">
-                                                <p><a href="javascript:void(0);">おめでとう！</a>新規ユーザー数の新記録を達成しました</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="item-timeline">
-                                            <div class="t-dot" data-original-title="" title="">
-                                            </div>
-                                            <div class="t-text">
-                                                <p>ウェブサイトの<span>成果（前週比）</span></p>
-                                            </div>
-                                        </div>
-
-                                        <div class="item-timeline">
-                                            <div class="t-dot" data-original-title="" title="">
-                                            </div>
-                                            <div class="t-text">
-                                                <p><a href="javascript:void(0);">おめでとう！</a>新規ユーザー数の新記録を達成しました</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="item-timeline">
-                                            <div class="t-dot" data-original-title="" title="">
-                                            </div>
-                                            <div class="t-text">
-                                                <p>ウェブサイトの<span>成果（前週比）</span></p>
-                                            </div>
-                                        </div>
-
-                                    </div>                                    
                                 </div>
-
-                                <div class="tm-action-btn">
-                                    <button class="btn">もっと見る</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                
-
-
-
-                    <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12 col-12 layout-spacing">
-                        <div class="widget widget-one">
-                            <div class="widget-heading">
-                                <h6 class="">統計</h6>
-                            </div>
-                            <div class="w-chart">
-                                <div class="w-chart-section">
-                                    <div class="w-detail">
-                                        <p class="w-title">訪問者数</p>
-                                        <p class="w-stats">423,964</p>
-                                    </div>
-                                    <div class="w-chart-render-one">
-                                        <div id="total-users"></div>
-                                    </div>
-                                </div>
-
-                                <div class="w-chart-section">
-                                    <div class="w-detail">
-                                        <p class="w-title">購買者数</p>
-                                        <p class="w-stats">7,929</p>
-                                    </div>
-                                    <div class="w-chart-render-one">
-                                        <div id="paid-visits"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12 layout-spacing">
-                        <div class="widget widget-card-four">
-                            <div class="widget-content">
-                                <div class="w-content">
-                                    <div class="w-info">
-                                        <h6 class="value">QP 45,141</h6>
-                                        <p class="">クエストポイント</p>
-                                    </div>
-                                    <div class="">
-                                        <div class="w-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-gradient-secondary" role="progressbar" style="width: 57%" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 layout-spacing">
-                        <div class="widget widget-account-invoice-two">
-                            <div class="widget-content">
-                                <div class="account-box">
-                                    <div class="info">
-                                        <h5 class="">ロイヤルパス</h5>
-                                        <p class="inv-balance">¥980/月</p>
-                                    </div>
-                                    <div class="acc-action">
-                                        <div class="">
-                                            <a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></a>
-                                            <a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-credit-card"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg></a>
-                                        </div>
-                                        <a href="javascript:void(0);">アップグレード</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12 layout-spacing">
-                        <div class="widget widget-card-one">
-                            <div class="widget-content">
-
-                                <div class="media">
-                                    <div class="w-img">
-                                        <img src="assets/img/user_90x90.png" alt="avatar">
-                                    </div>
-                                    <div class="media-body">
-                                        <h6>canecome</h6>
-                                        <p class="meta-date-time">2020/03/14</p>
-                                    </div>
-                                </div>
-
-                                <p>何は今もちろんある仕事人というのの時を云ったな。同時に生涯を発展家もいよいよ漠然たる経過あるだくらいを申し上げて来るですがは意見感ずるだろべきて、とてもとは取り巻かなうですまし。悪口を困りだのもいやしくも生涯がとうとうですたた。</p>
-
-                                <div class="w-action">
-                                    <div class="card-like">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-up"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
-                                        <span>551 Likes</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12 layout-spacing">
-                        <div class="widget widget-five">
-                            <div class="widget-content">
-
-                                <div class="header">
-                                    <div class="header-body">
-                                        <h6>タスク＆クエスト</h6>
-                                        <p class="meta-date">2020/03</p>
-                                    </div>
-                                    <div class="task-action">
-                                        <div class="dropdown  custom-dropdown">
-                                            <a class="dropdown-toggle" href="#" role="button" id="pendingTask" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
-                                            </a>
-
-                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="pendingTask">
-                                                <a class="dropdown-item" href="javascript:void(0);">追加する</a>
-                                                <a class="dropdown-item" href="javascript:void(0);">もっと見る</a>
-                                                <a class="dropdown-item" href="javascript:void(0);">編集する</a>
-                                                <a class="dropdown-item" href="javascript:void(0);">全てをクリア</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="w-content">
-                                    <div class="">                                            
-                                        <p class="task-left">8</p>
-                                        <p class="task-completed"><span>12 個済み</span></p>
-                                        <p class="task-hight-priority"><span>3 個</span> やれることがあります</p>
-                                    </div>
-                                </div>
-                            </div>
+                            </div>                            
                         </div>
 
-                    </div>
-
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
-                        <div class="widget widget-card-two">
-                            <div class="widget-content">
-
-                                <div class="media">
-                                    <div class="w-img">
-                                        <img src="assets/img/90x90.jpg" alt="avatar">
-                                    </div>
-                                    <div class="media-body">
-                                        <h6>meemDev team</h6>
-                                        <p class="meta-date-time">JP, Tokyo</p>
-                                    </div>
-                                </div>
-
-                                <div class="card-bottom-section">
-                                    <h5>4人のメンバーが参加中</h5>
-                                    <div class="img-group">
-                                        <img src="assets/img/user_90x90.png" alt="avatar">
-                                        <img src="assets/img/user_90x90.png" alt="avatar">
-                                        <img src="assets/img/user_90x90.png" alt="avatar">
-                                        <img src="assets/img/user_90x90.png" alt="avatar">
-                                    </div>
-                                    <a href="javascript:void(0);" class="btn">もっと見る</a>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
-                <div class="footer-wrapper">
-                    <div class="footer-section f-section-1">
-                        <p class="">Copyright © 2020 <a target="_blank" href="https://designreset.com">meem</a>, All rights reserved.</p>
-                    </div>
-                    <div class="footer-section f-section-2">
-                        <p class="">Coded with <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>canecome</p>
-                    </div>
                 </div>
-
+        <div class="footer-wrapper">
+                <div class="footer-section f-section-1">
+                    <p class="">Copyright © 2020 <a target="_blank" href="meem.work">meem</a>, All rights reserved.</p>
+                </div>
+                <div class="footer-section f-section-2">
+                    <p class="">Coded with <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> canecome</p>
+                </div>
             </div>
         </div>
-        <!--  END CONTENT PART  -->
+        <!--  END CONTENT AREA  -->
+
 
     </div>
     <!-- END MAIN CONTAINER -->
+
 
     <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
     <script src="assets/js/libs/jquery-3.1.1.min.js"></script>
@@ -825,8 +612,7 @@
     <!-- END GLOBAL MANDATORY SCRIPTS -->
 
     <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
-    <script src="plugins/apex/apexcharts.min.js"></script>
-    <script src="assets/js/dashboard/dash_2.js"></script>
+    <script src="assets/js/pages/faq/faq2.js"></script>
     <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
 </body>
-{% endblock %}
+</html>

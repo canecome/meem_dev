@@ -1,11 +1,25 @@
-{% extends 'front/_base.html' %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <title>プロフィールを編集する | meem</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico"/>
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/plugins.css" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
 
-{% block content %}
-<body class="alt-menu sidebar-noneoverflow">
-    <!-- BEGIN LOADER -->
-    <div id="load_screen"> <div class="loader"> <div class="loader-content"> <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 792 723" style="enable-background:new 0 0 792 723;" xml:space="preserve"> <g> <g> <path class="st0" d="M213.9,584.4c-47.4-25.5-84.7-60.8-111.8-106.1C75,433.1,61.4,382,61.4,324.9c0-57,13.6-108.1,40.7-153.3 S166.5,91,213.9,65.5s100.7-38.2,159.9-38.2c49.9,0,95,8.8,135.3,26.3s74.1,42.8,101.5,75.7l-85.5,78.9 c-38.9-44.9-87.2-67.4-144.7-67.4c-35.6,0-67.4,7.8-95.4,23.4s-49.7,37.4-65.4,65.4c-15.6,28-23.4,59.8-23.4,95.4 s7.8,67.4,23.4,95.4s37.4,49.7,65.4,65.4c28,15.6,59.7,23.4,95.4,23.4c57.6,0,105.8-22.7,144.7-68.2l85.5,78.9 c-27.4,33.4-61.4,58.9-102,76.5c-40.6,17.5-85.8,26.3-135.7,26.3C314.3,622.7,261.3,809.9,213.9,584.4z"/> </g> <circle class="st1" cx="375.4" cy="322.9" r="100"/> </g> <g> <circle class="st2" cx="275.4" cy="910" r="65"></circle> <circle class="st4" cx="475.4" cy="910" r="65"></circle> </g> </svg> </div></div></div>
-    <!--  END LOADER -->
-
+    <!--  BEGIN CUSTOM STYLE FILE  -->
+    <link rel="stylesheet" type="text/css" href="plugins/dropify/dropify.min.css">
+    <link href="assets/css/users/account-setting.css" rel="stylesheet" type="text/css" />
+    <!--  END CUSTOM STYLE FILE  -->
+</head>
+<body class="sidebar-noneoverflow">
+    
     <!--  BEGIN NAVBAR  -->
     <div class="header-container">
         <header class="header navbar navbar-expand-sm">
@@ -373,439 +387,296 @@
             </nav>
         </div>
         <!--  END TOPBAR  -->
-        
-        <!--  BEGIN CONTENT PART  -->
+
+        <!--  BEGIN CONTENT AREA  -->
         <div id="content" class="main-content">
-            <div class="layout-px-spacing">
+            <div class="layout-px-spacing">                
+                    
+                <div class="account-settings-container layout-top-spacing">
 
-                <div class="page-header">
-                    <div class="page-title">
-                        <h3>GoogleAnalyticsデータポータル</h3>
-                    </div>
-                    <div class="dropdown filter custom-dropdown-icon">
-                        <a class="dropdown-toggle btn" href="#" role="button" id="filterDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="text"><span>表示</span> : 日別集計</span> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
-
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="filterDropdown">
-                            <a class="dropdown-item" data-value="<span>Show</span> : Daily Analytics" href="javascript:void(0);">日別集計</a>
-                            <a class="dropdown-item" data-value="<span>Show</span> : Weekly Analytics" href="javascript:void(0);">週別集計</a>
-                            <a class="dropdown-item" data-value="<span>Show</span> : Monthly Analytics" href="javascript:void(0);">月別集計</a>
-                            <a class="dropdown-item" data-value="Download All" href="javascript:void(0);">エクスポート</a>
-                            <a class="dropdown-item" data-value="Share Statistics" href="javascript:void(0);">シェア</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row layout-top-spacing">
-
-
-
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
-                        <div class="widget-four">
-                            <div class="widget-heading">
-                                <h5 class="">新規ユーザー（ブラウザ カテゴリ別）</h5>
-                            </div>
-                            <div class="widget-content">
-                                <div class="vistorsBrowser">
-                                    <div class="browser-list">
-                                        <div class="w-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chrome"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="21.17" y1="8" x2="12" y2="8"></line><line x1="3.95" y1="6.06" x2="8.54" y2="14"></line><line x1="10.88" y1="21.94" x2="15.46" y2="14"></line></svg>
-                                        </div>
-                                        <div class="w-browser-details">
-                                            <div class="w-browser-info">
-                                                <h6>Chrome</h6>
-                                                <p class="browser-count">65%</p>
-                                            </div>
-                                            <div class="w-browser-stats">
-                                                <div class="progress">
-                                                    <div class="progress-bar bg-gradient-primary" role="progressbar" style="width: 65%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="account-content">
+                        <div class="scrollspy-example" data-spy="scroll" data-target="#account-settings-scroll" data-offset="-100">
+                            <div class="row">
+                                <div class="col-xl-12 col-lg-12 col-md-12 layout-spacing">
+                                    <form id="general-info" class="section general-info">
+                                        <div class="info">
+                                            <h6 class="">プロフィールを編集する</h6>
+                                            <div class="row">
+                                                <div class="col-lg-11 mx-auto">
+                                                    <div class="row">
+                                                        <div class="col-xl-2 col-lg-12 col-md-4">
+                                                            <div class="upload mt-4 pr-md-4">
+                                                                <input type="file" id="input-file-max-fs" class="dropify" data-default-file="assets/img/user_90x90.png" data-max-file-size="2M" />
+                                                                <p class="mt-2"><i class="flaticon-cloud-upload mr-1"></i> 画像を登録</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xl-10 col-lg-12 col-md-8 mt-md-0 mt-4">
+                                                            <div class="form">
+                                                                <div class="row">
+                                                                    <div class="col-sm-6">
+                                                                        <div class="form-group">
+                                                                            <label for="fullName">ユーザー名</label>
+                                                                            <input type="text" class="form-control mb-4" id="fullName" placeholder="Full Name" value="canecome">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-6">
+                                                                        <label class="dob-input">誕生日</label>
+                                                                        <div class="d-sm-flex d-block">
+                                                                            <div class="form-group mr-1">
+                                                                                <select class="form-control" id="year">
+                                                                                  <option>年</option>
+                                                                                  <option>2018</option>
+                                                                                  <option>2017</option>
+                                                                                  <option>2016</option>
+                                                                                  <option>2015</option>
+                                                                                  <option>2014</option>
+                                                                                  <option>2013</option>
+                                                                                  <option>2012</option>
+                                                                                  <option>2011</option>
+                                                                                  <option>2010</option>
+                                                                                  <option>2009</option>
+                                                                                  <option>2008</option>
+                                                                                  <option>2007</option>
+                                                                                  <option>2006</option>
+                                                                                  <option>2005</option>
+                                                                                  <option>2004</option>
+                                                                                  <option>2003</option>
+                                                                                  <option>2002</option>
+                                                                                  <option>2001</option>
+                                                                                  <option>2000</option>
+                                                                                  <option>1999</option>
+                                                                                  <option>1998</option>
+                                                                                  <option>1997</option>
+                                                                                  <option>1996</option>
+                                                                                  <option>1995</option>
+                                                                                  <option>1994</option>
+                                                                                  <option>1993</option>
+                                                                                  <option>1992</option>
+                                                                                  <option>1991</option>
+                                                                                  <option>1990</option>
+                                                                                  <option>1989</option>
+                                                                                  <option>1988</option>
+                                                                                  <option>1987</option>
+                                                                                  <option selected>1986</option>
+                                                                                  <option>1985</option>
+                                                                                  <option>1984</option>
+                                                                                  <option>1983</option>
+                                                                                  <option>1982</option>
+                                                                                  <option>1981</option>
+                                                                                  <option>1980</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <div class="form-group mr-1">
+                                                                                <select class="form-control" id="month">
+                                                                                    <option>月</option>
+                                                                                    <option>1</option>
+                                                                                    <option>2</option>
+                                                                                    <option>3</option>
+                                                                                    <option>4</option>
+                                                                                    <option>5</option>
+                                                                                    <option selected>6</option>
+                                                                                    <option>7</option>
+                                                                                    <option>8</option>
+                                                                                    <option>9</option>
+                                                                                    <option>10</option>
+                                                                                    <option>11</option>
+                                                                                    <option>12</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <div class="form-group mr-1">
+                                                                                <select class="form-control" id="exampleFormControlSelect1">
+                                                                                  <option>日</option>
+                                                                                  <option>1</option>
+                                                                                  <option>2</option>
+                                                                                  <option>3</option>
+                                                                                  <option>4</option>
+                                                                                  <option>5</option>
+                                                                                  <option>6</option>
+                                                                                  <option>7</option>
+                                                                                  <option>8</option>
+                                                                                  <option>9</option>
+                                                                                  <option>10</option>
+                                                                                  <option>11</option>
+                                                                                  <option>12</option>
+                                                                                  <option>13</option>
+                                                                                  <option selected>14</option>
+                                                                                  <option>15</option>
+                                                                                  <option>16</option>
+                                                                                  <option>17</option>
+                                                                                  <option>18</option>
+                                                                                  <option>19</option>
+                                                                                  <option>20</option>
+                                                                                  <option>21</option>
+                                                                                  <option>22</option>
+                                                                                  <option>23</option>
+                                                                                  <option>24</option>
+                                                                                  <option>25</option>
+                                                                                  <option>26</option>
+                                                                                  <option>27</option>
+                                                                                  <option>28</option>
+                                                                                  <option>29</option>
+                                                                                  <option>30</option>
+                                                                                </select>
+                                                                            </div> 
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="profession">肩書き</label>
+                                                                    <input type="text" class="form-control mb-4" id="profession" placeholder="Designer" value="Webデベロッパー">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </form>
+                                </div>
 
-                                    <div class="browser-list">
-                                        <div class="w-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-compass"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
-                                        </div>
-                                        <div class="w-browser-details">
-                                            
-                                            <div class="w-browser-info">
-                                                <h6>Safari</h6>
-                                                <p class="browser-count">25%</p>
-                                            </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12 layout-spacing">
+                                    <form id="social" class="section social">
+                                        <div class="info">
+                                            <h5 class="">連携されたSNS</h5>
+                                            <div class="row">
+                                                <div class="col-md-12 text-right mb-5">
+                                                    <button id="add-work-platforms" class="btn btn-primary">追加</button>
+                                                </div>
+                                                <div class="col-md-11 mx-auto">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="input-group social-linkedin mb-3">
+                                                                <div class="input-group-prepend mr-3">
+                                                                    <span class="input-group-text" id="linkedin"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></span>
+                                                                </div>
+                                                                <input type="text" class="form-control" placeholder="linkedin Username" aria-label="Username" aria-describedby="linkedin" value="meem_man">
+                                                            </div>
+                                                        </div>
 
-                                            <div class="w-browser-stats">
-                                                <div class="progress">
-                                                    <div class="progress-bar bg-gradient-danger" role="progressbar" style="width: 35%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        <div class="col-md-6">
+                                                            <div class="input-group social-tweet mb-3">
+                                                                <div class="input-group-prepend mr-3">
+                                                                    <span class="input-group-text" id="tweet"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></span>
+                                                                </div>
+                                                                <input type="text" class="form-control" placeholder="Twitter Username" aria-label="Username" aria-describedby="tweet" value="@meem_man">
+                                                            </div>
+                                                        </div>                                                        
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-11 mx-auto">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="input-group social-fb mb-3">
+                                                                <div class="input-group-prepend mr-3">
+                                                                    <span class="input-group-text" id="fb"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></span>
+                                                                </div>
+                                                                <input type="text" class="form-control" placeholder="Facebook Username" aria-label="Username" aria-describedby="fb" value="meem_man">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-6">
+                                                            <div class="input-group social-github mb-3">
+                                                                <div class="input-group-prepend mr-3">
+                                                                    <span class="input-group-text" id="github"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></span>
+                                                                </div>
+                                                                <input type="text" class="form-control" placeholder="Github Username" aria-label="Username" aria-describedby="github" value="@meem_man">
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-
                                         </div>
+                                    </form>
+                                </div>
 
-                                    </div>
-
-                                    <div class="browser-list">
-                                        <div class="w-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-                                        </div>
-                                        <div class="w-browser-details">
-                                            
-                                            <div class="w-browser-info">
-                                                <h6>Others</h6>
-                                                <p class="browser-count">15%</p>
-                                            </div>
-
-                                            <div class="w-browser-stats">
-                                                <div class="progress">
-                                                    <div class="progress-bar bg-gradient-warning" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="col-xl-12 col-lg-12 col-md-12 layout-spacing">
+                                    <form id="contact" class="section contact">
+                                        <div class="info">
+                                            <h5 class="">連絡先</h5>
+                                            <div class="row">
+                                                <div class="col-md-11 mx-auto">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="country">国</label>
+                                                                <select class="form-control" id="country">
+                                                                    <option>...</option>
+                                                                    <option selected>日本</option>
+                                                                    <option>アメリカ</option>
+                                                                    <option>インド</option>
+                                                                    <option>中国</option>
+                                                                    <option>ブラジル</option>
+                                                                    <option>ドイツ</option>
+                                                                    <option>カナダ</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="address">都道府県</label>
+                                                                <input type="text" class="form-control mb-4" id="address" placeholder="Address" value="東京都" >
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="location">住所</label>
+                                                                <input type="text" class="form-control mb-4" id="location" placeholder="千代田区千代田">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="phone">電話番号</label>
+                                                                <input type="text" class="form-control mb-4" id="phone" placeholder="Write your phone number here" value="090-1234-5678">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="email">メールアドレス</label>
+                                                                <input type="text" class="form-control mb-4" id="email" placeholder="Write your email here" value="meem@meem.work">
+                                                            </div>
+                                                        </div>                                    
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="website1">Webサイト</label>
+                                                                <input type="text" class="form-control mb-4" id="website1" placeholder="meem.work">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12 mx-auto">
+                                                            <div class="form-group">
+                                                                <label for="aboutBio">プロフィール文</label>
+                                                                <textarea class="form-control" id="aboutBio" placeholder="Tell something interesting about yourself" rows="10">何は今もちろんある仕事人というのの時を云ったな。同時に生涯を発展家もいよいよ漠然たる経過あるだくらいを申し上げて来るですがは意見感ずるだろべきて、とてもとは取り巻かなうですまし。悪口を困りだのもいやしくも生涯がとうとうですたた。
+何は今もちろんある仕事人というのの時を云ったな。同時に生涯を発展家もいよいよ漠然たる経過あるだくらいを申し上げて来るですがは意見感ずるだろべきて、とてもとは取り巻かなうですまし。悪口を困りだのもいやしくも生涯がとうとうですたた。</textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-
                                         </div>
-
-                                    </div>
-                                    
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12 layout-spacing">
-                        <div class="row widget-statistic">
-                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-                                <div class="widget widget-one_hybrid widget-followers">
-                                    <div class="widget-heading">
-                                        <div class="w-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                                        </div>
-                                        <p class="w-value">31.6K</p>
-                                        <h5 class="">セッション</h5>
-                                    </div>
-                                    <div class="widget-content">    
-                                        <div class="w-chart">
-                                            <div id="hybrid_followers"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-                                <div class="widget widget-one_hybrid widget-referral">
-                                    <div class="widget-heading">
-                                        <div class="w-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
-                                        </div>
-                                        <p class="w-value">1,900</p>
-                                        <h5 class="">リファラー</h5>
-                                    </div>
-                                    <div class="widget-content">    
-                                        <div class="w-chart">
-                                            <div id="hybrid_followers1"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-                                <div class="widget widget-one_hybrid widget-engagement">
-                                    <div class="widget-heading">
-                                        <div class="w-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
-                                        </div>
-                                        <p class="w-value">18.2%</p>
-                                        <h5 class="">エンゲージメント</h5>
-                                    </div>
-                                    <div class="widget-content">    
-                                        <div class="w-chart">
-                                            <div id="hybrid_followers3"></div>
-                                        </div>
-                                    </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-xl-9 col-lg-12 col-md-12 col-sm-12 col-12 layout-spacing">
-                        <div class="widget widget-chart-three">
-                            <div class="widget-heading">
-                                <div class="">
-                                    <h5 class="">ユーザーサマリー</h5>
-                                </div>
+                    <div class="account-settings-footer">
+                        
+                        <div class="as-footer-container">
 
-                                <div class="dropdown  custom-dropdown">
-                                    <a class="dropdown-toggle" href="#" role="button" id="uniqueVisitors" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
-                                    </a>
-
-                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="uniqueVisitors">
-                                        <a class="dropdown-item" href="javascript:void(0);">もっと見る</a>
-                                        <a class="dropdown-item" href="javascript:void(0);">更新</a>
-                                        <a class="dropdown-item" href="javascript:void(0);">エクスポート</a>
-                                    </div>
-                                </div>
+                            <button id="multiple-reset" class="btn btn-warning">元の状態に戻す</button>
+                            <div class="blockui-growl-message">
+                                <i class="flaticon-double-check"></i>&nbsp; 変更が保存されました
                             </div>
+                            <button id="multiple-messages" class="btn btn-primary">変更を保存する</button>
 
-                            <div class="widget-content">
-                                <div id="uniqueVisits"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
-                        <div class="widget widget-activity-two">
-
-                            <div class="widget-heading">
-                                <h5 class="">通知</h5>
-                            </div>
-
-                            <div class="widget-content">
-
-                                <div class="mt-container mx-auto">
-                                    <div class="timeline-line">
-                                        
-                                        <div class="item-timeline timeline-new">
-                                            <div class="t-dot" data-original-title="" title="">
-                                            </div>
-                                            <div class="t-text">
-                                                <p>ウェブサイトの<span>成果（前週比）</span></p>
-                                            </div>
-                                        </div>
-
-                                        <div class="item-timeline">
-                                            <div class="t-dot" data-original-title="" title="">
-                                            </div>
-                                            <div class="t-text">
-                                                <p><a href="javascript:void(0);">おめでとう！</a>新規ユーザー数の新記録を達成しました</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="item-timeline">
-                                            <div class="t-dot" data-original-title="" title="">
-                                            </div>
-                                            <div class="t-text">
-                                                <p>ウェブサイトの<span>成果（前週比）</span></p>
-                                            </div>
-                                        </div>
-
-                                        <div class="item-timeline">
-                                            <div class="t-dot" data-original-title="" title="">
-                                            </div>
-                                            <div class="t-text">
-                                                <p><a href="javascript:void(0);">おめでとう！</a>新規ユーザー数の新記録を達成しました</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="item-timeline">
-                                            <div class="t-dot" data-original-title="" title="">
-                                            </div>
-                                            <div class="t-text">
-                                                <p>ウェブサイトの<span>成果（前週比）</span></p>
-                                            </div>
-                                        </div>
-
-                                        <div class="item-timeline">
-                                            <div class="t-dot" data-original-title="" title="">
-                                            </div>
-                                            <div class="t-text">
-                                                <p><a href="javascript:void(0);">おめでとう！</a>新規ユーザー数の新記録を達成しました</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="item-timeline">
-                                            <div class="t-dot" data-original-title="" title="">
-                                            </div>
-                                            <div class="t-text">
-                                                <p>ウェブサイトの<span>成果（前週比）</span></p>
-                                            </div>
-                                        </div>
-
-                                    </div>                                    
-                                </div>
-
-                                <div class="tm-action-btn">
-                                    <button class="btn">もっと見る</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                
-
-
-
-                    <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12 col-12 layout-spacing">
-                        <div class="widget widget-one">
-                            <div class="widget-heading">
-                                <h6 class="">統計</h6>
-                            </div>
-                            <div class="w-chart">
-                                <div class="w-chart-section">
-                                    <div class="w-detail">
-                                        <p class="w-title">訪問者数</p>
-                                        <p class="w-stats">423,964</p>
-                                    </div>
-                                    <div class="w-chart-render-one">
-                                        <div id="total-users"></div>
-                                    </div>
-                                </div>
-
-                                <div class="w-chart-section">
-                                    <div class="w-detail">
-                                        <p class="w-title">購買者数</p>
-                                        <p class="w-stats">7,929</p>
-                                    </div>
-                                    <div class="w-chart-render-one">
-                                        <div id="paid-visits"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12 layout-spacing">
-                        <div class="widget widget-card-four">
-                            <div class="widget-content">
-                                <div class="w-content">
-                                    <div class="w-info">
-                                        <h6 class="value">QP 45,141</h6>
-                                        <p class="">クエストポイント</p>
-                                    </div>
-                                    <div class="">
-                                        <div class="w-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-gradient-secondary" role="progressbar" style="width: 57%" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 layout-spacing">
-                        <div class="widget widget-account-invoice-two">
-                            <div class="widget-content">
-                                <div class="account-box">
-                                    <div class="info">
-                                        <h5 class="">ロイヤルパス</h5>
-                                        <p class="inv-balance">¥980/月</p>
-                                    </div>
-                                    <div class="acc-action">
-                                        <div class="">
-                                            <a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></a>
-                                            <a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-credit-card"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg></a>
-                                        </div>
-                                        <a href="javascript:void(0);">アップグレード</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12 layout-spacing">
-                        <div class="widget widget-card-one">
-                            <div class="widget-content">
-
-                                <div class="media">
-                                    <div class="w-img">
-                                        <img src="assets/img/user_90x90.png" alt="avatar">
-                                    </div>
-                                    <div class="media-body">
-                                        <h6>canecome</h6>
-                                        <p class="meta-date-time">2020/03/14</p>
-                                    </div>
-                                </div>
-
-                                <p>何は今もちろんある仕事人というのの時を云ったな。同時に生涯を発展家もいよいよ漠然たる経過あるだくらいを申し上げて来るですがは意見感ずるだろべきて、とてもとは取り巻かなうですまし。悪口を困りだのもいやしくも生涯がとうとうですたた。</p>
-
-                                <div class="w-action">
-                                    <div class="card-like">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-up"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
-                                        <span>551 Likes</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12 layout-spacing">
-                        <div class="widget widget-five">
-                            <div class="widget-content">
-
-                                <div class="header">
-                                    <div class="header-body">
-                                        <h6>タスク＆クエスト</h6>
-                                        <p class="meta-date">2020/03</p>
-                                    </div>
-                                    <div class="task-action">
-                                        <div class="dropdown  custom-dropdown">
-                                            <a class="dropdown-toggle" href="#" role="button" id="pendingTask" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
-                                            </a>
-
-                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="pendingTask">
-                                                <a class="dropdown-item" href="javascript:void(0);">追加する</a>
-                                                <a class="dropdown-item" href="javascript:void(0);">もっと見る</a>
-                                                <a class="dropdown-item" href="javascript:void(0);">編集する</a>
-                                                <a class="dropdown-item" href="javascript:void(0);">全てをクリア</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="w-content">
-                                    <div class="">                                            
-                                        <p class="task-left">8</p>
-                                        <p class="task-completed"><span>12 個済み</span></p>
-                                        <p class="task-hight-priority"><span>3 個</span> やれることがあります</p>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
 
-                    </div>
-
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
-                        <div class="widget widget-card-two">
-                            <div class="widget-content">
-
-                                <div class="media">
-                                    <div class="w-img">
-                                        <img src="assets/img/90x90.jpg" alt="avatar">
-                                    </div>
-                                    <div class="media-body">
-                                        <h6>meemDev team</h6>
-                                        <p class="meta-date-time">JP, Tokyo</p>
-                                    </div>
-                                </div>
-
-                                <div class="card-bottom-section">
-                                    <h5>4人のメンバーが参加中</h5>
-                                    <div class="img-group">
-                                        <img src="assets/img/user_90x90.png" alt="avatar">
-                                        <img src="assets/img/user_90x90.png" alt="avatar">
-                                        <img src="assets/img/user_90x90.png" alt="avatar">
-                                        <img src="assets/img/user_90x90.png" alt="avatar">
-                                    </div>
-                                    <a href="javascript:void(0);" class="btn">もっと見る</a>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
-                <div class="footer-wrapper">
-                    <div class="footer-section f-section-1">
-                        <p class="">Copyright © 2020 <a target="_blank" href="https://designreset.com">meem</a>, All rights reserved.</p>
-                    </div>
-                    <div class="footer-section f-section-2">
-                        <p class="">Coded with <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>canecome</p>
-                    </div>
                 </div>
-
-            </div>
         </div>
-        <!--  END CONTENT PART  -->
+        <!--  END CONTENT AREA  -->
 
     </div>
     <!-- END MAIN CONTAINER -->
@@ -816,6 +687,7 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
     <script src="assets/js/app.js"></script>
+    
     <script>
         $(document).ready(function() {
             App.init();
@@ -824,9 +696,12 @@
     <script src="assets/js/custom.js"></script>
     <!-- END GLOBAL MANDATORY SCRIPTS -->
 
-    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
-    <script src="plugins/apex/apexcharts.min.js"></script>
-    <script src="assets/js/dashboard/dash_2.js"></script>
-    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+    <!--  BEGIN CUSTOM SCRIPTS FILE  -->
+
+    <script src="plugins/dropify/dropify.min.js"></script>
+    <script src="plugins/blockui/jquery.blockUI.min.js"></script>
+    <!-- <script src="plugins/tagInput/tags-input.js"></script> -->
+    <script src="assets/js/users/account-settings.js"></script>
+    <!--  END CUSTOM SCRIPTS FILE  -->
 </body>
-{% endblock %}
+</html>
